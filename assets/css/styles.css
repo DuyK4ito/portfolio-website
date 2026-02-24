@@ -359,6 +359,16 @@ img {
     background: var(--first-color);
 }
 
+.work__card-img-wrap {
+    object-fit: cover;
+    height: 333px;
+}
+
+.work__img {
+    width: 100%;
+    height: 100%;
+}
+
 .work__link {
     display: block;
     position: relative;
@@ -422,6 +432,7 @@ img {
 
 .about__description {
     margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 .about__description b {
@@ -650,13 +661,21 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 399.98px) {
     .container {
         margin-inline: 1rem;
     }
 
     .skills__content {
         grid-template-columns: repeat(2, max-content);
+    }
+
+    .work__link i {
+        display: none;
+    }
+
+    .work__card-img-wrap {
+        height: auto;
     }
 }
 
@@ -669,6 +688,10 @@ img {
     .contact__container {
         grid-template-columns: 350px;
         justify-content: center;
+    }
+
+    .work__card-img-wrap {
+        height: 200px;
     }
 }
 
@@ -819,6 +842,10 @@ img {
 
     .work__link {
         padding: 3rem 3rem 2rem;
+    }
+
+    .work__card-img-wrap {
+        height: 333px;
     }
 
     .work__title {
