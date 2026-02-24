@@ -8,6 +8,8 @@ The project is created to showcase my frontend skills, personal projects, and ba
 
 ## Live Demo
 
+https://duyk4ito.github.io/portfolio-website/
+
 ---
 
 ## Project Overview
